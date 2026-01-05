@@ -1,9 +1,9 @@
 
 import React, { useEffect, useState } from 'react';
-import { Header } from './components/Header';
-import { StoryContent } from './components/StoryContent';
-import { Footer } from './components/Footer';
-import { StickyCTA } from './components/StickyCTA';
+import { Header } from './components/Header.tsx';
+import { StoryContent } from './components/StoryContent.tsx';
+import { Footer } from './components/Footer.tsx';
+import { StickyCTA } from './components/StickyCTA.tsx';
 
 const App: React.FC = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
