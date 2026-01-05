@@ -34,7 +34,7 @@ export const StoryContent: React.FC = () => {
       </p>
 
       <p className="mb-6">
-        It was the quiet anxiety that followed him everywhere. The stinging <b>pain when urinating</b> made every trip to the restroom feel like a battle. Even worse, the occasional <b>pain during ejaculation</b> had caused him to pull away from his wife, Diane. He felt like a shadow of the man he used to be, and he was too embarrassed to tell anyone—even his doctor.
+        It was the quiet anxiety that followed him everywhere. The stinging <b>pain when urinating</b> made every trip to the restroom feel like a battle. Even worse, the persistent <b>difficulty urinating</b> and general discomfort had caused him to pull away from his wife, Diane. He felt like a shadow of the man he used to be, and he was too embarrassed to tell anyone—even his doctor.
       </p>
 
       <p className="mb-6">
@@ -71,7 +71,7 @@ export const StoryContent: React.FC = () => {
         </h2>
 
         <p className="mb-6 text-center text-slate-700">
-          If you’re ready to say goodbye to <b>pain when urinating</b>, <b>pain during ejaculation</b>, and <b>frequent urination</b>—and hello to restful nights and worry-free days—this could be your moment.
+          If you’re ready to say goodbye to <b>pain when urinating</b>, <b>difficulty urinating</b>, and <b>frequent urination</b>—and hello to restful nights and worry-free days—this could be your moment.
         </p>
 
         <a 
