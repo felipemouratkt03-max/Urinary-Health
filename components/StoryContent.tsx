@@ -6,21 +6,21 @@ const AFFILIATE_URL = "https://hop.clickbank.net/?affiliate=mourabh&vendor=provi
 export const StoryContent: React.FC = () => {
   return (
     <article className="prose-text text-slate-800">
-      <h1 className="text-3xl md:text-4xl font-extrabold leading-tight text-slate-900 mb-8">
+      <h1 className="text-3xl md:text-4xl font-extrabold leading-tight text-slate-900 mb-8 text-center md:text-left">
         Tired of the Midnight Marathons to the Bathroom... or That Dreaded Wince Every Time You Go?
       </h1>
 
-      <p className="mb-6 font-semibold italic text-slate-500">
+      <p className="mb-6 font-semibold italic text-slate-500 text-center md:text-left">
         By David Miller, Health Correspondent
       </p>
 
-      <div className="mb-8">
+      <div className="mb-10 flex flex-col items-center">
         <img 
-          src="https://images.unsplash.com/photo-1552058544-f2b08422138a?auto=format&fit=crop&q=80&w=1200" 
-          alt="Mark, a 62-year-old retired teacher, enjoying a quiet moment in his home"
-          className="w-full rounded-2xl shadow-lg"
+          src="https://images.unsplash.com/photo-1552058544-f2b08422138a?auto=format&fit=crop&q=80&w=800" 
+          alt="Mark, a 62-year-old retired teacher"
+          className="w-full max-w-md rounded-2xl shadow-xl aspect-[4/3] object-cover"
         />
-        <p className="mt-2 text-sm text-slate-500 italic text-center">
+        <p className="mt-4 text-sm text-slate-500 italic text-center max-w-md">
           Mark, 62, thought his days of being active were over before discovering a natural approach to urinary health.
         </p>
       </div>
@@ -65,7 +65,7 @@ export const StoryContent: React.FC = () => {
         Mark is just one of thousands of American men over 50 who have quietly taken back control of their lives. They’ve swapped the frustration of "bathroom anxiety" for the peace of mind that comes with real, natural support.
       </p>
 
-      <div className="bg-slate-50 p-8 rounded-3xl border border-slate-200 mt-12 mb-8">
+      <div className="bg-slate-50 p-8 rounded-3xl border border-slate-200 mt-12 mb-8 shadow-sm">
         <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6 text-center">
           Take Back Your Comfort, Confidence, and Peace of Mind
         </h2>
