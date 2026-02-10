@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-const AFFILIATE_URL = "https://hop.clickbank.net/?affiliate=mourabh&vendor=provive&pid=20&tid=trac";
+const AFFILIATE_URL = "https://hop.clickbank.net/?affiliate=mourabh&vendor=provive&pid=20&tid=track";
 
 export const StoryContent: React.FC = () => {
   return (
