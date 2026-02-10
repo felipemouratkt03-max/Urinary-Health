@@ -7,7 +7,6 @@ export const StickyCTA: React.FC = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      // Show sticky CTA after scrolling down 500px
       if (window.scrollY > 500) {
         setIsVisible(true);
       } else {

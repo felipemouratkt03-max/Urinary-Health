@@ -73,14 +73,16 @@ export const StoryContent: React.FC = () => {
           If you’re ready to say goodbye to <b>pain when urinating</b>, <b>difficulty urinating</b>, and <b>frequent urination</b>—and hello to restful nights and worry-free days—this could be your moment.
         </p>
 
-        <a 
-          href={AFFILIATE_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-5 px-6 rounded-xl font-bold text-lg md:text-xl transition-all shadow-lg hover:shadow-xl active:scale-[0.98]"
-        >
-          YES — I Want to Try This Natural Urinary Health Support Formula
-        </a>
+        <div className="relative z-10">
+          <a 
+            href={AFFILIATE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-5 px-6 rounded-xl font-bold text-lg md:text-xl transition-all shadow-lg hover:shadow-xl active:scale-[0.98]"
+          >
+            YES — I Want to Try This Natural Urinary Health Support Formula
+          </a>
+        </div>
 
         <p className="mt-4 text-center text-sm text-slate-500">
           Click above to visit the official site and check availability.
