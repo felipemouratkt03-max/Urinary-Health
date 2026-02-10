@@ -3,6 +3,11 @@ import React from 'react';
 const AFFILIATE_URL = "https://hop.clickbank.net/?affiliate=mourabh&vendor=provive&pid=20&tid=track";
 
 export const StoryContent: React.FC = () => {
+  const handleRedirect = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    // Força o redirecionamento via JS caso o link nativo falhe por bloqueio de script
+    window.location.href = AFFILIATE_URL;
+  };
+
   return (
     <article className="prose-text text-slate-800">
       <h1 className="text-3xl md:text-4xl font-extrabold leading-tight text-slate-900 mb-8 text-center md:text-left">
@@ -73,19 +78,18 @@ export const StoryContent: React.FC = () => {
           If you’re ready to say goodbye to <b>pain when urinating</b>, <b>difficulty urinating</b>, and <b>frequent urination</b>—and hello to restful nights and worry-free days—this could be your moment.
         </p>
 
-        <div className="relative z-10 flex justify-center">
+        <div className="flex justify-center">
           <a 
             href={AFFILIATE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block w-full max-w-lg bg-blue-600 hover:bg-blue-700 text-white text-center py-5 px-6 rounded-xl font-bold text-lg md:text-xl transition-all shadow-lg hover:shadow-xl active:scale-[0.98] cursor-pointer no-underline"
+            onClick={handleRedirect}
+            className="inline-flex items-center justify-center w-full max-w-lg bg-blue-600 hover:bg-blue-700 text-white text-center py-5 px-6 rounded-xl font-bold text-lg md:text-xl transition-all shadow-lg hover:shadow-xl active:scale-[0.98] cursor-pointer no-underline uppercase tracking-tight"
           >
-            YES — I Want to Try This Natural Urinary Health Support Formula
+            Click Here To Watch The Video & Claim Your Discount
           </a>
         </div>
 
         <p className="mt-4 text-center text-sm text-slate-500">
-          Click above to visit the official site and check availability.
+          *Check official site for limited time offers
         </p>
       </div>
     </article>
