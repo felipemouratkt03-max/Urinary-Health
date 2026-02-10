@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 
 const AFFILIATE_URL = "https://hop.clickbank.net/?affiliate=mourabh&vendor=provive&pid=20&tid=track";
@@ -25,6 +24,8 @@ export const StickyCTA: React.FC = () => {
       <div className="max-w-md mx-auto">
         <a 
           href={AFFILIATE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center justify-between bg-blue-600 text-white rounded-full px-6 py-4 shadow-2xl font-bold active:scale-95 transition-transform"
         >
           <span>Claim Your Support Formula</span>
