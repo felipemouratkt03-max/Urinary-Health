@@ -78,7 +78,7 @@ export const StoryContent: React.FC = () => {
             href={AFFILIATE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-5 px-6 rounded-xl font-bold text-lg md:text-xl transition-all shadow-lg hover:shadow-xl active:scale-[0.98]"
+            className="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-5 px-6 rounded-xl font-bold text-lg md:text-xl transition-all shadow-lg hover:shadow-xl active:scale-[0.98] cursor-pointer"
           >
             YES — I Want to Try This Natural Urinary Health Support Formula
           </a>
