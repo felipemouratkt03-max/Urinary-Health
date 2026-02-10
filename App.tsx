@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Header } from './components/Header';
-import { StoryContent } from './components/StoryContent';
-import { Footer } from './components/Footer';
-import { StickyCTA } from './components/StickyCTA';
+import { Header } from './components/Header.tsx';
+import { StoryContent } from './components/StoryContent.tsx';
+import { Footer } from './components/Footer.tsx';
+import { StickyCTA } from './components/StickyCTA.tsx';
 
 const App: React.FC = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -11,7 +11,8 @@ const App: React.FC = () => {
     const handleScroll = () => {
       const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
       const currentScroll = window.scrollY;
-      setScrollProgress((currentScroll / totalScroll) * 100);
+      const progress = totalScroll > 0 ? (currentScroll / totalScroll) * 100 : 0;
+      setScrollProgress(progress);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -19,16 +20,16 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center">
+    <div className="min-h-screen flex flex-col items-center bg-slate-50">
       {/* Reading Progress Bar */}
       <div 
-        className="fixed top-0 left-0 h-1.5 bg-blue-600 z-50 transition-all duration-200" 
+        className="fixed top-0 left-0 h-1.5 bg-blue-600 z-[60] transition-all duration-200" 
         style={{ width: `${scrollProgress}%` }}
       />
       
       <Header />
       
-      <main className="w-full max-w-2xl px-5 py-8 md:py-12 bg-white shadow-sm border-x border-slate-100">
+      <main className="w-full max-w-2xl px-5 py-8 md:py-12 bg-white shadow-sm border-x border-slate-100 min-h-screen">
         <StoryContent />
       </main>
 
