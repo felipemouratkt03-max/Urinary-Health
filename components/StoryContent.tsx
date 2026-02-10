@@ -3,8 +3,8 @@ import React from 'react';
 const AFFILIATE_URL = "https://hop.clickbank.net/?affiliate=mourabh&vendor=provive&pid=20&tid=track";
 
 export const StoryContent: React.FC = () => {
-  const handleRedirect = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    // Força o redirecionamento via JS caso o link nativo falhe por bloqueio de script
+  const handleRedirect = (e: React.MouseEvent) => {
+    // Fallback for safety, though the <a> tag should handle it
     window.location.href = AFFILIATE_URL;
   };
 
@@ -69,28 +69,34 @@ export const StoryContent: React.FC = () => {
         Mark is just one of thousands of American men over 50 who have quietly taken back control of their lives. They’ve swapped the frustration of "bathroom anxiety" for the peace of mind that comes with real, natural support.
       </p>
 
-      <div className="bg-slate-50 p-8 rounded-3xl border border-slate-200 mt-12 mb-8 shadow-sm">
+      <div className="bg-slate-100 p-8 rounded-3xl border-2 border-slate-300 mt-12 mb-8 shadow-inner">
         <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6 text-center">
-          Take Back Your Comfort, Confidence, and Peace of Mind
+          Take Back Your Comfort & Sleep Through The Night
         </h2>
 
-        <p className="mb-6 text-center text-slate-700">
-          If you’re ready to say goodbye to <b>pain when urinating</b>, <b>difficulty urinating</b>, and <b>frequent urination</b>—and hello to restful nights and worry-free days—this could be your moment.
+        <p className="mb-8 text-center text-slate-700 font-medium">
+          Click the button below to see the exact 30-second ritual Mark used to restore his flow and regain his confidence.
         </p>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center flex-col items-center gap-4">
           <a 
             href={AFFILIATE_URL}
             onClick={handleRedirect}
-            className="inline-flex items-center justify-center w-full max-w-lg bg-blue-600 hover:bg-blue-700 text-white text-center py-5 px-6 rounded-xl font-bold text-lg md:text-xl transition-all shadow-lg hover:shadow-xl active:scale-[0.98] cursor-pointer no-underline uppercase tracking-tight"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="animate-pulse-gold inline-flex items-center justify-center w-full max-w-xl bg-yellow-400 hover:bg-yellow-500 text-black text-center py-6 px-4 rounded-xl font-black text-xl md:text-2xl transition-all shadow-[0_10px_20px_rgba(234,179,8,0.3)] hover:shadow-[0_15px_30px_rgba(234,179,8,0.4)] border-b-4 border-yellow-600 no-underline uppercase leading-tight"
           >
-            Click Here To Watch The Video & Claim Your Discount
+            <span className="flex items-center gap-3">
+              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+              </svg>
+              WATCH VIDEO: End Your Midnight Bathroom Trips
+            </span>
           </a>
+          <p className="text-xs text-slate-400 font-bold uppercase tracking-widest animate-pulse">
+            ⚠️ Special Discount Available Today
+          </p>
         </div>
-
-        <p className="mt-4 text-center text-sm text-slate-500">
-          *Check official site for limited time offers
-        </p>
       </div>
     </article>
   );
