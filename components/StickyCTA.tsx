@@ -28,10 +28,10 @@ export const StickyCTA: React.FC = () => {
       <div className="max-w-md mx-auto">
         <button 
           onClick={handleMobileClick}
-          className="w-full flex items-center justify-center gap-3 bg-yellow-400 text-black rounded-2xl px-6 py-5 shadow-[0_-10px_40px_rgba(0,0,0,0.3)] font-black text-xl active:scale-95 transition-transform border-b-4 border-yellow-600 uppercase italic tracking-tighter"
+          className="w-full flex items-center justify-center gap-2 bg-blue-600 text-white rounded-xl px-6 py-4 shadow-lg font-bold text-lg active:scale-95 transition-transform uppercase tracking-tight"
         >
-          <span>See The "Morning Flush" Ritual</span>
-          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <span>Watch Video Now</span>
+          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
           </svg>
         </button>

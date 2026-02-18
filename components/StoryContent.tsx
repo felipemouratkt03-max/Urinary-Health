@@ -69,40 +69,24 @@ export const StoryContent: React.FC = () => {
         Mark is just one of thousands of American men over 50 who have quietly taken back control of their lives. They’ve swapped the frustration of "bathroom anxiety" for the peace of mind that comes with real, natural support.
       </p>
 
-      <div className="bg-white p-8 rounded-3xl border-4 border-yellow-400 mt-12 mb-8 shadow-2xl">
-        <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 text-center uppercase tracking-tight">
-          STOP! Do This Before You Sleep Tonight
-        </h2>
-
-        <p className="mb-8 text-center text-slate-700 text-lg font-bold">
-          Click below to discover the exact <span className="text-red-600 underline">"Morning Flush"</span> ritual that millions of men are using to end bathroom emergencies and restore their peak performance.
+      <div className="mt-12 mb-8 flex flex-col items-center gap-6">
+        <a 
+          href={AFFILIATE_URL}
+          onClick={handleRedirect}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center w-full max-w-xl bg-blue-600 hover:bg-blue-700 text-white text-center py-5 px-6 rounded-xl font-bold text-xl md:text-2xl transition-all shadow-lg no-underline uppercase tracking-tight"
+        >
+          <span className="flex items-center gap-3">
+            <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+            </svg>
+            Watch The Video Presentation
+          </span>
+        </a>
+        <p className="text-sm text-slate-400 font-medium">
+          Click to see the natural "Morning Flush" ritual.
         </p>
-
-        <div className="flex justify-center flex-col items-center gap-6">
-          <a 
-            href={AFFILIATE_URL}
-            onClick={handleRedirect}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="animate-pulse-gold inline-flex items-center justify-center w-full max-w-xl bg-yellow-400 hover:bg-yellow-500 text-black text-center py-6 px-4 rounded-xl font-black text-xl md:text-3xl transition-all shadow-[0_15px_40px_rgba(234,179,8,0.4)] hover:shadow-[0_20px_50px_rgba(234,179,8,0.5)] border-b-8 border-yellow-600 no-underline uppercase leading-none"
-          >
-            <span className="flex items-center gap-3">
-              <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-              </svg>
-              WATCH VIDEO: RESTORE YOUR FLOW NOW
-            </span>
-          </a>
-          
-          <div className="flex flex-col items-center gap-2">
-            <p className="text-sm text-red-600 font-black uppercase tracking-widest">
-              ⚠️ Warning: This Video May Be Removed Soon
-            </p>
-            <p className="text-xs text-slate-400 font-medium">
-              *Limited availability for new customers only.
-            </p>
-          </div>
-        </div>
       </div>
     </article>
   );
